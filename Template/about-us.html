@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENCANTO&TERNURA</title>
+  <script src="js/urls.js"></script>
+  <!-- include the site stylesheet -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/color/color.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div id="pre-loader" class="loader-container">
+    <div class="loader">
+      <img src="images/svg/rings.svg" alt="loader">
+    </div>
+  </div>
+  <!-- main container of all the page elements -->
+  <div id="wrapper">
+    <!-- header of the page -->
+    <header id="header" class="sticky-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logo">
+              <a href="index.html"><img src="images/logotukituki4.png" alt="tukitukichic"></a>
+            </div>
+            <div class="nav-holder">
+              <a href="#" class="nav-opener"><span>menu</span></a>
+              <nav id="nav">
+                <ul class="list-unstyled">
+                  <p id="userName2" style="display: none;"></p>
+                  <li class="hidden-xs">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="active mega-drop">
+                    <a href="#">store</a>
+                    <div class="drop-holder">
+                      <div class="coll">
+                        <strong class="title">PAGES</strong>
+                        <ul class="list-unstyled">
+                          <li><a href="category-page.html">All products</a></li>
+                          <li><a href="shoping-cart.html">Shopping cart</a></li>
+                          <li><a href="login.html">Login</a></li>
+                        </ul>
+                      </div>
+                      <div class="coll">
+                        <strong class="title">CATEGORIES</strong>
+                        <ul class="list-unstyled category-list">
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a id="addProducts" href="add-products.html" style="display: none;">administracion</a></li>
+                </ul>
+              </nav>
+              <div class="align-right">
+                <ul class="list-unstyled icon-list">
+                  <li>
+                    <p id="userName" style="display: none;"></p>
+                    <a id="iconUser" href="login.html"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg></a>
+                  </li>
+                  <li class="cart-box">
+                    <a class="cart-opener opener-icons" href="#">
+                      <i class="icon-cart"></i>
+                      <span id="iconCantidad" class="cart-num">0</span>
+                    </a>
+                    <div class="cart-drop">
+                      <div class="cart-holder">
+                        <strong class="main-title">You have <i id="cantidad">0 items</i> in your cart</strong>
+                        <ul class="cart-list list-unstyled">
+                        </ul>
+                        <div class="total-price-area">
+                          <span class="title-text">Total</span>
+                          <span id="total" class="price">$0</span>
+                        </div>
+                        <span class="cart">U.S. free shiping, UE shiping 8usd.</span>
+                        <a id="comprar" href="/shoping-cart.html" class="btn">Buy</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hidden-xs">
+                    <a class="btn-search" href="#"><i class="icon-search"></i></a>
+                  </li>
+                  <li>
+                    <a id="logout" class="logout-btn"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                      <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                    </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="search-popup">
+      <div class="holder">
+        <div class="col">
+          <div class="block-holder">
+            <a href="#" class="close-btn"><i class="icon-close"></i></a>
+            <form action="#" class="submit-form">
+              <fieldset>
+                <label for="search" class="icon-search"></label>
+                <input type="search" id="search">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contain main informative part of the site -->
+    <main id="main" role="main">
+      <!-- main-banner of the page -->
+      <section class="banner" style="background-image: url(http://placehold.it/1920x1000);">
+        <span class="sale-percent">SALE OF 50%</span>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+                <div class="caption">
+                  <h1 class="main-heading about">ABOUT US</h1>
+                  <ul class="list-unstyled breadcrumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li>ABOUT US</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <span class="year">TRENDS FOR 2024</span>
+      </section>
+      <!-- About Description of the page -->
+      <section class="about-dscrp wow fadeInUp" data-wow-delay="0.4s">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="img-holder">
+                <img src="http://placehold.it/520x450" alt="image description">
+              </div>
+              <div class="text-wrap">
+                <h1 class="about-heading">ABOUT US</h1>
+                <strong class="title">love jewelry</strong>
+                <p>Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim pharetra, erat sed fermentum feugiat.</p>
+                <ul>
+                  <li>Pharetra, erat sed fermentum feugiat.</li>
+                  <li>Spendisse in orci enim pharetra, erat sed fermentum.</li>
+                  <li>Pharetra, erat sed fermentum feugiat.</li>
+                </ul>
+                <a href="#" class="btn-more">Read more <i class="icon-right-arrow"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Social Rating of the page -->
+      <section class="social-rating wow fadeInUp" data-wow-delay="0.4s">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 text-center">
+              <h3>SUBSCRIBERS</h3>
+              <span class="rating"><span class="counter">198.9</span> k</span>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center">
+              <h3>INSTAGRAM FOLLOWERS</h3>
+              <span class="rating"><span class="counter">201.5</span> k</span>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center">
+              <h3>PIECES SOLD</h3>
+              <span class="rating"><span class="counter">23.741</span> k</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- team-section of the page -->
+      <section class="team-sec wow fadeInUp" data-wow-delay="0.4s">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="header text-center">
+                <span class="title">Our Awesome Team</span>
+                <h3 class="about-heading">MEET OUR TEAM</h3>
+              </div>
+              <ul class="list-unstyled team-slider">
+                <li>
+                  <div class="img-holder">
+                    <img src="http://placehold.it/360x470" alt="image description">
+                  </div>
+                  <h4><a href="#">Christine Jensen</a></h4>
+                  <span class="sub-title">Art Drector</span>
+                </li>
+                <li>
+                  <div class="img-holder">
+                    <img src="http://placehold.it/360x470" alt="image description">
+                  </div>
+                  <h4><a href="#">Christine Jensen</a></h4>
+                  <span class="sub-title">Art Drector</span>
+                </li>
+                <li>
+                  <div class="img-holder">
+                    <img src="http://placehold.it/360x470" alt="image description">
+                  </div>
+                  <h4><a href="#">Christine Jensen</a></h4>
+                  <span class="sub-title">Art Drector</span>
+                </li>
+                <li>
+                  <div class="img-holder">
+                    <img src="http://placehold.it/360x470" alt="image description">
+                  </div>
+                  <h4><a href="#">Christine Jensen</a></h4>
+                  <span class="sub-title">Art Drector</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- blockquote-section of the page -->
+      <section class="blockquote-sec wow fadeInUp" data-wow-delay="0.4s">
+        <ul class="list-unstyled blockquote-slider">
+          <li>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <!-- Blockquote Holder of the page -->
+                  <div class="blockquote-holder">
+                    <div class="author-img">
+                      <img src="http://placehold.it/135x135" alt="image description">
+                    </div>
+                    <h2 class="author-name">Press Spaceba</h2>
+                    <p>Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliqua m massa nisl quis neque. Suspendisse in orci enim pharetra, erat sed fermentum feugiat, velit mauris egestas quam ut aliquam massa uspendisse .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <!-- Blockquote Holder of the page -->
+                  <div class="blockquote-holder">
+                    <div class="author-img">
+                      <img src="http://placehold.it/135x135" alt="image description">
+                    </div>
+                    <h2 class="author-name">Press Spaceba</h2>
+                    <p>Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliqua m massa nisl quis neque. Suspendisse in orci enim pharetra, erat sed fermentum feugiat, velit mauris egestas quam ut aliquam massa uspendisse .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <!-- Blockquote Holder of the page -->
+                  <div class="blockquote-holder">
+                    <div class="author-img">
+                      <img src="http://placehold.it/135x135" alt="image description">
+                    </div>
+                    <h2 class="author-name">Press Spaceba</h2>
+                    <p>Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliqua m massa nisl quis neque. Suspendisse in orci enim pharetra, erat sed fermentum feugiat, velit mauris egestas quam ut aliquam massa uspendisse .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- footer of the Page -->
+    <footer id="footer" class="wow fadeInUp" data-wow-delay="0.4s">
+      <!-- <span class="free-ship">ENVIO GRATIS</span> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-lg-4 txt-holder">
+            <div class="footer-logo">
+              <a href="index.html">Encanto y dulzura</a>
+            </div>
+            <!-- <p>Pharetra, erat sed fermentum<br> feugiat, velit mauris egestas<br> quam. </p> -->
+             <p>copyright NekJoes@2024</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <h3>CONTACTANOS</h3>
+            <!-- Contact of the page -->
+            <ul class="list-unstyled contact-info">
+              <!-- <li><i class="icon icon-location"></i><address>Limited. 222-UTC , EU .</address></li>
+              <li><i class="icon icon-email"></i><a class="txt" href="#">Support@gmail.com</a></li> -->
+              <li><i class="icon icon-phone"></i><a class="txt" href="#">(591)-71879017</a></li>
+              <!-- <li><i class="icon icon-printer"></i><a class="txt" href="#">(591)-71879017</a></li> -->
+            </ul>
+          </div>
+          <!-- <div class="col-xs-12 col-sm-4 col-lg-5">
+            <h3>PUBLICACIONES DE INSTAGRAM</h3>
+            <ul class="list-unstyled instagram-list">
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+      <span class="support">SOPORTE 24H</span>
+    </footer>
+    <!-- Back Top of the page -->
+    <span id="back-top" class="arrow_carrot-up"></span>
+  </div>
+  <!-- include jQuery -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <!-- include jQuery -->
+  <script src="js/plugins.js"></script>
+  <!-- include jQuery -->
+  <script src="js/urls.js"></script>
+  <script src="js/jquery.main.js"></script>
+</body>
+</html>

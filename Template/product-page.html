@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUKITUKICHIC</title>
+  <script src="js/urls.js"></script>
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/color/color.css">
+  <link rel="icon" href="images/disco.png" type="image/icon type">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1275890570356239');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1275890570356239&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Meta Pixel Code -->
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-946950614">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-946950614');
+</script>
+</head>
+<body>
+  <!-- Page Loader -->
+  <div id="pre-loader" class="loader-container">
+    <div class="loader">
+      <img src="images/svg/rings.svg" alt="loader">
+    </div>
+  </div>
+  <!-- main container of all the page elements -->
+  <div id="wrapper">
+    <!-- header of the page -->
+    <header id="header" class="sticky-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logo" style="display: none;">
+              <a href="index.html"><img src="images/logotukituki4.png" alt="tukitukichic"></a>
+            </div>
+            <div class="nav-holder">
+              <a href="#" class="nav-opener"><span>menu</span></a>
+              <nav id="nav">
+                <ul class="list-unstyled">
+                  <p id="userName2" style="display: none;"></p>
+                  <li>
+                    <a href="index.html" style="font-family: lazy-moon; font-size: xx-large;">Home</a>
+                  </li>
+                  <li class="active mega-drop" style="font-family: lazy-moon; font-size: xx-large;">
+                    <a href="#">store</a>
+                    <div class="drop-holder">
+                      <div class="coll">
+                        <strong class="title">PAGES</strong> 
+                        <ul class="list-unstyled">
+                          <li><a href="category-page.html">All products</a></li>
+                          <li><a href="shoping-cart.html">Shopping cart</a></li>
+                          <li><a href="login.html">Login</a></li>
+                        </ul>
+                      </div>
+                      <div class="coll">
+                        <strong class="title">CATEGORIES</strong>
+                        <ul class="list-unstyled category-list">
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" data-toggle="modal" data-target="#aboutModal" style="font-family: lazy-moon; font-size: xx-large;">About Us</a>
+                </li>
+                </ul>
+              </nav>
+              <div class="align-right">
+                <ul class="list-unstyled icon-list">
+                  <li>
+                    <p id="userName" style="display: none;"></p>
+                    <a id="iconUser" href="login.html"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg></a>
+                  </li>
+                  <li class="cart-box">
+                    <a class="cart-opener opener-icons" href="#">
+                      <i class="icon-cart"></i>
+                      <span id="iconCantidad" class="cart-num">0</span>
+                    </a>
+                    <div class="cart-drop">
+                      <div class="cart-holder">
+                        <strong class="main-title">You have <i id="cantidad">0 items</i> in your cart</strong>
+                        <ul class="cart-list list-unstyled">
+                        </ul>
+                        <div class="total-price-area">
+                          <span class="title-text">Total</span>
+                          <span id="total" class="price">$0</span>
+                        </div>
+                        <span class="cart">U.S. free shiping, UE shiping 8usd.</span>
+                        <a id="comprar" href="/shoping-cart.html" class="btn">Buy</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hidden-xs">
+                    <a class="btn-search" href="#"><i class="icon-search"></i></a>
+                  </li>
+                  <li>
+                    <a id="logout" class="logout-btn"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                      <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                    </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Search Popup of the page -->
+    <div class="search-popup">
+      <div class="holder">
+        <div class="col">
+          <div class="block-holder">
+            <a href="#" class="close-btn"><i class="icon-close"></i></a>
+            <form action="#" class="submit-form">
+              <fieldset>
+                <label for="search" class="icon-search"></label>
+                <input type="search" id="search">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contain main informative part of the site -->
+    <main id="main" role="main">
+      <!-- main-banner of the page -->
+      <section class="banner wow fadeInUp" data-wow-delay="0.4s" style="background-image: url(https://imagetesteo1.blob.core.windows.net/goldenwendy/1920x1000_cabesal.jpg); display: none;">
+        <span class="sale-percent">SALE OF 5%</span>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+                <div class="caption">
+                  <h1 class="main-heading">Shop</h1>
+                  <ul class="list-unstyled breadcrumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category-page.html">Store</a></li>
+                    <li id="product">product</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <span class="year">Top Fashion Trends of 2024</span>
+      </section>
+      <!-- product-detial of the page -->
+      <section class="product-detial wow fadeInUp" data-wow-delay="0.4s">
+        <!-- Slider of the page -->
+        <img src="images/logo6.png" alt="tukitukichic" >
+        <div class="slider">
+          <!-- Product Slider of the page -->
+          <!-- <div class="img-holder product-slider">
+            <div class="slide">
+              <img id="img1" src="/images/960x925.png" alt="image descrption">
+            </div>
+            <div class="slide">
+              <img id="img2" src="/images/960x925.png" alt="image descrption">
+            </div>
+            <div class="slide">
+              <img id="img3" src="/images/960x925.png" alt="image descrption">
+            </div>
+            <div class="slide">
+              <img id="img4" src="/images/960x925.png" alt="image descrption">
+            </div>
+          </div> -->
+          <div id="carouselExample" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active slide">
+                <img id="img1" class="d-block w-100" src="/images/960x925.png" alt="image description">
+              </div>
+              <div class="carousel-item slide">
+                <img id="img2" class="d-block w-100" src="/images/960x925.png" alt="image description">
+              </div>
+              <div class="carousel-item slide">
+                <img id="img3" class="d-block w-100" src="/images/960x925.png" alt="image description">
+              </div>
+              <div class="carousel-item slide">
+                <img id="img4" class="d-block w-100" src="/images/960x925.png" alt="image description">
+              </div>
+              <div class="carousel-item slide">
+                <img id="img5" class="d-block w-100" src="/images/960x925.png" alt="image description">
+              </div>
+              <div class="carousel-item slide">
+                <img id="img6" class="d-block w-100" src="/images/960x925.png" alt="image description">
+              </div>
+              <div class="carousel-item slide">
+                <img id="img7" class="d-block w-100" src="/images/960x925.png" alt="image description">
+              </div>
+              <div class="carousel-item slide">
+                <img id="img8" class="d-block w-100" src="/images/960x925.png" alt="image description">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Pagg Slide of the page -->
+          <ul class="list-unstyled slick-slider pagg-slider image-content" style="overflow-x: scroll; white-space: nowrap;">
+            <li><img id="image1" class="image-selected" src="/images/260x310.png" alt="image description"></li>
+            <li><img id="image2" src="/images/260x310.png" alt="image description"></li>
+            <li><img id="image3" src="/images/260x310.png" alt="image description"></li>
+            <li><img id="image4" src="/images/260x310.png" alt="image description"></li>
+            <li><img id="image5" style="display: none;" src="/images/260x310.png" alt="image description"></li>
+            <li><img id="image6" style="display: none;" src="/images/260x310.png" alt="image description"></li>
+            <li><img id="image7" style="display: none;" src="/images/260x310.png" alt="image description"></li>
+            <li><img id="image8" style="display: none;" src="/images/260x310.png" alt="image description"></li>
+          </ul>
+        </div>
+        <!-- Detail Holder of the page -->
+        <div class="detial-holder">
+          <h2 style="font-family: back-wild;">KENNETH JAY LANE</h2>
+          <!-- <span class="product-name">Gold-plated necklace</span> -->
+          <!-- Rank Rating of the page -->
+          <div class="rank-rating">
+            <span class="total-price" id="precio1">$ 160.00</span>
+            <span class="descuento" id="descuento1" style="font-family: back-wild; font-size: xx-large; color: #8286a2;">0.00</span>
+            <span id="offerEndsText" style="font-size: large; margin-left: 10px;">Offer ends in:</span>
+            <span id="countdown" style="font-size: large; margin-left: 5px;"></span>
+            <!-- <ul class="list-unstyled rating-list">
+              <li><a class="icon-star" href="#"></a></li>
+              <li><a class="icon-star" href="#"></a></li>
+              <li><a class="icon-star" href="#"></a></li>
+              <li><a class="icon-star" href="#"></a></li>
+              <li><a class="icon-star" href="#"></a></li>
+            </ul> -->
+          </div>
+          <p id="breveDescripcion"></p>
+          
+          <div class="DescripImage">
+            <h2 style="font-family: back-wild;">Description</h2>
+            <img class="ImageDescrip" id="descripcion" style="margin-bottom: 15px;">
+          </div>
+          
+          
+          <div class="txt-wrap">
+            <div class="holder">
+              <span class="product">Product code</span>
+              <strong class="product-code">698309</strong>
+            </div>
+            
+            <div class="product-selection-container">
+              <div class="product-selection">
+                <div class="holder">
+                  <span class="size">Size</span>
+                  <ul class="list-unstyled size-list"> 
+                    <li><a href="#">s</a></li>
+                    <li><a href="#">m</a></li>
+                    <li><a href="#">l</a></li>
+                    <li class="active"><a href="#">xl</a></li>
+                  </ul>
+                </div>
+                <form action="#" class="product-form">
+                  <fieldset>
+                    <div class="row-val">
+                      <label for="qty">quantity</label>
+                      <input type="text" id="qty" class="qty-input" value="1">
+                    </div>
+                    <div class="row-val">
+                      <label for="clr">Color</label>
+                      <select id="clr" class="clr-select">
+                        <option>Negro</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+
+            <div class="holder" style="display: flex;">
+              <ul class="list-unstyled list">
+                <li><a href="#"><i class="icon-favorite"></i> favorites</a></li>
+                <!-- <li><a href="#"><i class="icon_balance"></i>  compare</a></li> -->
+              </ul>
+
+              <ul style="display: flex; gap: 15px;">
+                <p style="font-family: back-wild;">Number of sales:</p>
+                <p id="ventas">0</p>
+              </ul>
+              
+            </div>
+            <p style="font-family: back-wild; color: #8286a2; font-size: x-large;" >U.S.A. free shiping.</p>
+            <p style="font-family: back-wild;">Shipping stimate 2 days</p>
+            <img src="images/stripe.svg" class="StripeImg">
+            <a href="shoping-cart.html" class="btn-primary">Add to cart</a>
+            <a id="buttonAddProduct" style="display: none;"></a>
+            <!-- Social Network of the page -->
+            <ul class="list-unstyled social-network">
+              <li style="display: none;"><a class="icon-pinterest" href="#"></a></li>
+              <li><a class="icon-twitter" href="https://x.com/TukiTukiChic"></a></li>
+              <li><a class="icon-facebook" href="https://www.facebook.com/profile.php?id=61568107525143"></a></li>
+              <li><a class="icon-instagram" href="https://www.instagram.com/tukitukichic"></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+          <div class="rating-section">
+            <div class="rating-content">
+                <label>Leave your rating:</label>
+                <div id="rating-stars">
+                    <i class="far fa-star" data-index="1"></i>
+                    <i class="far fa-star" data-index="2"></i>
+                    <i class="far fa-star" data-index="3"></i>
+                    <i class="far fa-star" data-index="4"></i>
+                    <i class="far fa-star" data-index="5"></i>
+                </div>
+            </div>
+        
+            <!-- Sección de comentario -->
+            <div class="comment-row">
+                <textarea id="comment-input" placeholder="Leave a comment"></textarea>
+                <button id="submit-comment">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+          </div>
+      
+
+          <div id="all-comments-section">
+            <h3>Comments from users:</h3>
+            <div id="comments-container"></div>
+          </div>
+      </section>
+
+      <!-- slider-section of the page -->
+      <section class="slider-sec wow fadeInUp" data-wow-delay="0.4s" style="display: none;">
+        <ul class="product-list list-unstyled slick-slider">
+            <!-- <li class="product-block">
+                <div class="over">
+                    <div class="align-left">
+                        <strong class="title-name">Goldtone Bib</strong>
+                        <div style="display: flex; flex-direction: row; gap: 5px;">
+                          <strong class="price"><del class="descuento">150$</del></strong>
+                          <strong class="price precio"> 120$</strong>
+                        </div>
+                    </div>
+                    <a href="#" class="like text-center">
+                      <i class="icon-favorite"></i>
+                      <p class="likes">23</p>
+                    </a>
+                </div>
+                <a href="#"><img class="img-responsive" alt="image description" src="http://placehold.it/480x620"></a>
+            </li>
+            <li class="product-block active">
+                <div class="over">
+                    <div class="align-left">
+                        <strong class="title-name">Goldtone Bib</strong>
+                        <div style="display: flex; flex-direction: row; gap: 5px;">
+                          <strong class="price"><del class="descuento">150$</del></strong>
+                          <strong class="price precio"> 120$</strong>
+                        </div>
+                    </div>
+                    <a href="#" class="like text-center">
+                      <i class="icon-favorite"></i>
+                      <p class="likes">23</p>
+                    </a>
+                </div>
+                <a href="#"><img class="img-responsive" alt="image description" src="http://placehold.it/480x620"></a>
+            </li>
+            <li class="product-block">
+                <div class="over">
+                    <div class="align-left">
+                        <strong class="title-name">Goldtone Bib</strong>
+                        <div style="display: flex; flex-direction: row; gap: 5px;">
+                          <strong class="price"><del class="descuento">150$</del></strong>
+                          <strong class="price precio"> 120$</strong>
+                        </div>
+                    </div>
+                    <a href="#" class="like text-center">
+                      <i class="icon-favorite"></i>
+                      <p class="likes">23</p>
+                    </a>
+                </div>
+                <a href="#"><img class="img-responsive" alt="image description" src="http://placehold.it/480x620"></a>
+            </li> -->
+        </ul>
+    </section>
+
+
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="aboutModalLabel">About Us</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p>TukiTukiChic is a brand under TGoGold, Inc., registered in the USA. TukiTukiChic specializes in the design and commercialization of clothing and accessories under the PrintOn Demand model. For more information, please contact us via email at support@tukitukichic.com</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="addProduct" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="aboutModalLabel">Product added to cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p>Now you can also add the product in other colors to your cart.</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="aboutModalLabel">Details</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p>For a smoother shopping experience, please create an account. This helps us securely save your shipping details and process your order quickly!</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" onclick="window.location.href='login.html'">Login</button>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    </main>
+    <!-- footer of the Page -->
+    <footer id="footer" class="wow fadeInUp" data-wow-delay="0.4s">
+      <!-- <span class="free-ship">ENVIO GRATIS</span> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-lg-4 txt-holder">
+            <div class="footer-logo">
+              <a href="index.html" style="font-family: back-wild;">TukiTukiChic</a>
+            </div>
+            <!-- <p>Pharetra, erat sed fermentum<br> feugiat, velit mauris egestas<br> quam. </p> -->
+             <p>copyright TukiTukiChic@2025</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <h3 style="font-family: lazy-moon; font-size: xx-large;">CONTACT</h3>
+            <!-- Contact of the page -->
+            <ul class="list-unstyled contact-info">
+              <!-- <li><i class="icon icon-location"></i><address>Limited. 222-UTC , EU .</address></li>
+              <li><i class="icon icon-phone"></i><a class="txt" href="#">Support@gmail.com</a></li> -->
+              <li><i class="icon icon-email"></i><a class="txt" href="#">sales@tukitukichic.com</a></li>
+              <!-- <li><i class="icon icon-printer"></i><a class="txt" href="#">(591)-71879017</a></li> -->
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-5">
+            <img src="https://imagetesteo1.blob.core.windows.net/goldenwendy/5NOMO TUKI TUKI1.png" class="imageNomo">
+            <!-- <h3>PUBLICACIONES DE INSTAGRAM</h3>
+            <ul class="list-unstyled instagram-list">
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <span class="support">SUPPORT 24H</span>
+    </footer>
+    <!-- Back Top of the page -->
+    <span id="back-top" class="arrow_carrot-up"></span>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- include jQuery -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <!-- include jQuery -->
+  <script src="js/plugins.js"></script>
+  <!-- include jQuery -->
+  <!-- <script src="js/urls.js"></script> -->
+  <script src="js/jquery.main.js"></script>
+  <script src="js/product-page.js"></script>
+</body>
+</html>

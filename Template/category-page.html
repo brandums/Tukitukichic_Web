@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUKITUKICHIC</title>
+  <script src="js/urls.js"></script>
+  <!-- include the site stylesheet -->
+  <script src="js/category-page.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/color/color.css">
+  <link rel="icon" href="images/disco.png" type="image/icon type">
+    <!-- Meta Pixel Code -->
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1275890570356239');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1275890570356239&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-946950614">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-946950614');
+</script>
+</head>
+<body>
+  <!-- Page Loader -->
+  <div id="pre-loader" class="loader-container">
+    <div class="loader">
+      <img src="images/svg/rings.svg" alt="loader">
+    </div>
+  </div>
+  <!-- main container of all the page elements -->
+  <div id="wrapper">
+    <!-- header of the page -->
+    <header id="header" class="sticky-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logo" style="display: none;">
+              <a href="index.html"><img src="images/logotukituki4.png" alt="tukitukichic"></a>
+            </div>
+            <div class="nav-holder">
+              <a href="#" class="nav-opener" ><span>menu</span></a>
+              <nav id="nav">
+                <ul class="list-unstyled">
+                  <p id="userName2" style="display: none;"></p>
+                  <li>
+                    <a href="index.html" style="font-family: lazy-moon; font-size: xx-large;">Home</a>
+                  </li>
+                  <li class="active mega-drop" style="font-family: lazy-moon; font-size: xx-large;">
+                    <a href="#">store</a>
+                    <div class="drop-holder">
+                      <div class="coll">
+                        <strong class="title">PAGES</strong>
+                        <ul class="list-unstyled">
+                          <li><a href="category-page.html">All products</a></li>
+                          <li><a href="shoping-cart.html">Shopping cart</a></li>
+                          <li><a href="login.html">Login</a></li>
+                        </ul>
+                      </div>
+                      <div class="coll">
+                        <strong class="title">CATEGORIES</strong>
+                        <ul class="list-unstyled category-list">
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" data-toggle="modal" data-target="#aboutModal" style="font-family: lazy-moon; font-size: xx-large;">About Us</a>
+                </li>
+                </ul>
+              </nav>
+              <div class="align-right">
+                <ul class="list-unstyled icon-list">
+                  <li>
+                    <p id="userName" style="display: none;"></p>
+                    <a id="iconUser" href="login.html"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg></a>
+                  </li>
+                  <li class="cart-box">
+                    <a class="cart-opener opener-icons" href="#">
+                      <i class="icon-cart"></i>
+                      <span id="iconCantidad" class="cart-num">0</span>
+                    </a>
+                    <div class="cart-drop">
+                      <div class="cart-holder">
+                        <strong class="main-title">You have <i id="cantidad">0 items</i> in your cart</strong>
+                        <ul class="cart-list list-unstyled">
+                        </ul>
+                        <div class="total-price-area">
+                          <span class="title-text">Total</span>
+                          <span id="total" class="price">$0</span>
+                        </div>
+                        <span class="cart">U.S. free shiping, UE shiping 8usd.</span>
+                        <a id="comprar" href="/shoping-cart.html" class="btn">Buy</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hidden-xs">
+                    <a class="btn-search" href="#"><i class="icon-search"></i></a>
+                  </li>
+                  <li>
+                    <a id="logout" class="logout-btn"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                      <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                    </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Search Popup of the page -->
+    <div class="search-popup">
+      <div class="holder">
+        <div class="col">
+          <div class="block-holder">
+            <a href="#" class="close-btn"><i class="icon-close"></i></a>
+            <form action="#" class="submit-form">
+              <fieldset>
+                <label for="search" class="icon-search"></label>
+                <input type="search" placeholder="Search">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contain main informative part of the site -->
+    <main id="main" role="main">
+      <!-- main-banner of the page -->
+      <section class="banner wow fadeInUp" data-wow-delay="0.4s" style="background-image: url(https://imagetesteo1.blob.core.windows.net/goldenwendy/1920x1000-tienda-2.jpg); display: none;">
+        <span class="sale-percent">SALE OF 5%</span>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+                <div class="caption">
+                  <h1 class="main-heading">Store</h1>
+                  <ul class="list-unstyled breadcrumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Store</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <span class="year">Top Fashion Trends of 2024</span>
+      </section>
+      <!-- product-section of the page -->
+      <section class="product-sec wow fadeInUp" data-wow-delay="0.4s">
+        <img src="images/logo6.png" alt="tukitukichic" >
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="list-unstyled filter-list">
+                <li id="all" class="active"><a href="#">All</a></li>
+                <!-- <li><a href="#" data-filter=".rings">rings</a></li>
+                <li><a href="#" data-filter=".charms">charms</a></li>
+                <li><a href="#" data-filter=".pendants">pendants</a></li>
+                <li><a href="#" data-filter=".necklaces">necklaces</a></li>
+                <li><a href="#" data-filter=".brooches">brooches</a></li>
+                <li><a href="#" data-filter=".men">men’s</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid products-container2">
+          <div class="product-grid" id="productGrid">
+
+          </div>
+
+          <div class="pagination-container">
+            <nav class="mt-4">
+              <ul class="pagination justify-content-center"></ul>
+            </nav>
+          </div>
+        </div>
+        
+
+        <!-- <div class="holder" id="masonry-container">
+          <div class="product-block coll-2 rings necklaces" id="product1a" >
+            
+            <div class="over" id="over1">
+              
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html?category=joyeria&page=1&indexProduct=3">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del>
+                  </strong><strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center">
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/480x620">
+          </div>
+          <div class="product-block coll-2 charms brooches" id="product2a">
+            <div class="over" id="over2">
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del></strong>
+                  <strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center">
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/480x620">
+          </div>
+          <div class="product-block coll-1 pendants charms" id="product3a">
+            <div class="over" id="over3">
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del>
+                  </strong><strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center">
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/960x620">
+          </div>
+          <div class="product-block coll-1 necklaces" id="product4a">
+            <div class="over" id="over4">
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del>
+                  </strong><strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center">
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/960x620">
+          </div>
+          <div class="product-block coll-1 brooches rings" id="product5a">
+            <div class="over" id="over5">
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del>
+                  </strong><strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center">
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/960x1235">
+          </div>
+          <div class="product-block coll-2 men" id="product6a">
+            <div class="over" id="over6">
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del>
+                  </strong><strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center">
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/480x620">
+          </div>
+          <div class="product-block coll-2 charms men" id="product7a">
+            <div class="over" id="over7">
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del>
+                  </strong><strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center">
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/480x620">
+          </div>
+          <div class="product-block coll-2 pendants charms" id="product8a">
+            <div class="over" id="over8">
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del>
+                  </strong><strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center">
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/480x620">
+          </div>
+          <div class="product-block coll-2 necklaces" id="product9a">
+            <div class="over" id="over9">
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del>
+                  </strong><strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center">
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/480x620">
+          </div>
+          <div class="product-block coll-2 brooches necklaces" id="product10a">
+            <div class="over" id="over10">
+              <div class="align-left">
+                <strong class="title-name"><a class="redirect" href="product-page.html">Goldtone Bib</a></strong>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                  <strong class="price"><del class="descuento">150$</del>
+                  </strong><strong class="price precio"> 120$</strong>
+                </div>
+              </div>
+              <a href="#" class="like text-center" >
+                <i class="icon-favorite"></i>
+                <p class="likes">23</p>
+              </a>
+            </div>
+            <img class="img-responsive" alt="image description" src="http://placehold.it/480x620">
+          </div>
+          <div class="product-block coll-2 indexes-block">
+            <div class="pagination-holder">
+              <ul class="list-unstyled pagination text-center">
+                <li class="slick-prev slick-arrow"><a href="#" class="icon-left-arrow"></a></li>
+                <li class="slick-active"><a href="#">01</a></li>
+                <li><a href="#">02</a></li>
+                <li><a href="#">03</a></li>
+                <li class="slick-prev slick-arrow"><a href="#" class="icon-right-arrow"></a></li>
+              </ul>
+            </div>
+            <img src="images/img46.jpg" alt="image description" class="img-responsive">
+          </div>
+        </div> -->
+      </section>
+
+      <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutModalLabel">About Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>TukiTukiChic is a brand under TGoGold, Inc., registered in the USA. TukiTukiChic specializes in the design and commercialization of clothing and accessories under the PrintOn Demand model. For more information, please contact us via email at support@tukitukichic.com</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer of the Page -->
+    <footer id="footer" class="wow fadeInUp" data-wow-delay="0.4s">
+      <!-- <span class="free-ship">ENVIO GRATIS</span> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-lg-4 txt-holder">
+            <div class="footer-logo">
+              <a href="index.html" style="font-family: back-wild;">TukiTukiChic</a>
+            </div>
+            <!-- <p>Pharetra, erat sed fermentum<br> feugiat, velit mauris egestas<br> quam. </p> -->
+             <p>copyright TukiTukiChic@2025</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <h3 style="font-family: lazy-moon; font-size: xx-large;">CONTACT</h3>
+            <!-- Contact of the page -->
+            <ul class="list-unstyled contact-info">
+              <!-- <li><i class="icon icon-location"></i><address>Limited. 222-UTC , EU .</address></li>
+              <li><i class="icon icon-phone"></i><a class="txt" href="#">Support@gmail.com</a></li> -->
+              <li><i class="icon icon-email"></i><a class="txt" href="#">sales@tukitukichic.com</a></li>
+              <!-- <li><i class="icon icon-printer"></i><a class="txt" href="#">(591)-71879017</a></li> -->
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-5">
+            <img src="https://imagetesteo1.blob.core.windows.net/goldenwendy/5NOMO TUKI TUKI1.png" class="imageNomo">
+            <!-- <h3>PUBLICACIONES DE INSTAGRAM</h3>
+            <ul class="list-unstyled instagram-list">
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+              <li><a href="#"><img src="http://placehold.it/95x70" alt="image description"></a></li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <span class="support">SUPPORT 24H</span>
+    </footer>
+    <!-- Back Top of the page -->
+    <span id="back-top" class="arrow_carrot-up"></span>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- include jQuery -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <!-- include jQuery -->
+  <script src="js/plugins.js"></script>
+  <!-- include jQuery -->
+  <!-- <script src="js/urls.js"></script> -->
+  <script src="js/jquery.main.js"></script>
+</body>
+</html>
