@@ -36,8 +36,7 @@ TukitukiChic Web is an e-commerce platform designed for selling products, offeri
 
 | Technology | Purpose |
 |------------|---------|
-| Angular | Frontend |
+| HTML - CSS - JS | Frontend |
 | ASP.NET Core | Backend |
 | SQL Server | Database |
 | Stripe API | Payment Processing |
-| JWT | Security and Authentication |
